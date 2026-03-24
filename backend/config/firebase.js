@@ -6,8 +6,11 @@ const client_email = process.env.FIREBASE_CLIENT_EMAIL;
 let private_key = process.env.FIREBASE_PRIVATE_KEY;
 
 if (private_key) {
-  // Ensure escaped newlines are converted to actual newlines
+  // Strip surrounding quotes if dotenv left them in
+  private_key = private_key.replace(/^"([\s\S]*)"$/, '$1');
+  // Convert all escaped \n sequences to real newlines
   private_key = private_key.replace(/\\n/g, '\n');
+  console.log('🔑 Private key loaded, starts with:', private_key.slice(0, 40));
 }
 
 if (!admin.apps.length) {
