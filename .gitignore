@@ -1,0 +1,16 @@
+node_modules/
+.env
+dist/
+build/
+.DS_Store
+*.json
+!package.json
+!package-lock.json
+!composer.json
+!composer-lock.json
+# Sensitive data folders
+.firebase/
+.firebase-adminsdk/
+# Local IDE
+.vscode/
+.idea/

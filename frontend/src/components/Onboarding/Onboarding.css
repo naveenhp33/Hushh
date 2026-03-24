@@ -1,0 +1,117 @@
+.onboarding-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.onboarding-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 3.5rem;
+  border-radius: 2.5rem;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 0 15px rgba(96, 165, 250, 0.5);
+}
+
+.onboarding-step h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.onboarding-step p {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.onboarding-step input {
+  width: 100%;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.interests-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.interest-tag {
+  padding: 0.75rem 1.5rem;
+  background: rgba(15, 23, 42, 0.3);
+  border: 1px solid var(--border-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+}
+
+.interest-tag:hover {
+  background: rgba(15, 23, 42, 0.5);
+  border-color: rgba(96, 165, 250, 0.3);
+  color: var(--text-main);
+}
+
+.interest-tag.active {
+  background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
+  transform: scale(1.05);
+}
+
+.primary-btn {
+  background: linear-gradient(to right, var(--primary), var(--primary-hover));
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
+}
+
+.primary-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(96, 165, 250, 0.5);
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid var(--text-muted);
+    color: var(--text-muted);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+}
