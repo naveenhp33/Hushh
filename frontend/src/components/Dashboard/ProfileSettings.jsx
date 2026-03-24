@@ -22,8 +22,7 @@ const ProfileSettings = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      // Assuming a backend route is added for this later
-      // await axios.put('/dashboard/profile', formData);
+      await axios.put(`/dashboard/profile/${user.firebaseUid}`, formData);
       toast.success('Profile updated successfully! 🚀');
       if (refreshUser) await refreshUser();
     } catch (err) {

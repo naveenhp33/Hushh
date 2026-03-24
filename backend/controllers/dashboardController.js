@@ -128,3 +128,14 @@ exports.claimReward = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+exports.updateProfile = async (req, res) => {
+  try {
+    const { uid } = req.params;
+    const { name, college, phone, paymentId } = req.body;
+    await User.findOneAndUpdate({ firebaseUid: uid }, { name, college, phone, paymentId });
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};

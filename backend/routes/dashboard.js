@@ -7,5 +7,6 @@ router.get('/leaderboard', dashboardController.getLeaderboard);
 router.get('/activation/:uid', dashboardController.getActivationTasks);
 router.post('/activation/:uid/task', dashboardController.updateTask);
 router.post('/claim-reward/:uid', dashboardController.claimReward);
+router.put('/profile/:uid', dashboardController.updateProfile);
 
 module.exports = router;
