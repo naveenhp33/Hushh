@@ -36,7 +36,7 @@ const ProtectedRoute = ({ children, requireOnboarding = true, requireAdmin = fal
 function App() {
   return (
     <AuthProvider>
-      <Router basename="/Hushh">
+      <Router>
         <div className="app-container">
           <Toaster position="top-right" />
           <Routes>
