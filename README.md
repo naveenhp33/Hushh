@@ -13,8 +13,9 @@ A full-stack platform for managing and growing the Hush AI Campus Ambassador pro
 2. **Ambassador Dashboard**: Real-time stats, engagement charts, and activity summaries.
 3. **Referral System**: Unique link generation and automated tracking of clicks/signups.
 4. **7-Day Activation**: Gamified task list to ensure new users stay engaged.
-5. **Leaderboard**: Competitive rankings based on referral performance.
-6. **Analytics**: Tracking user flow and drop-off points (stored in MongoDB).
+5. **Reward & Milestones**: Uniquely tiered rewards (Premium tier, Swag Box, etc.) with a live "Claim" system and celebratory UI.
+6. **Leaderboard**: Competitive rankings based on referral performance.
+7. **Analytics**: Tracking user flow and drop-off points (stored in MongoDB).
 
 ## Setup Instructions
 
